@@ -1,0 +1,33 @@
+    <img src="/../assets/images/bg_part.jpg" style="background-repeat: repeat-y;width: 100%;height: 100%;position: absolute;z-index: -1; background-size: 100%;"
+    />
+<div class="start-container start-alignment">
+
+    <div class="start-content">
+        <img src=".\src\assets\images\logo2.png" style="width:40%;height: auto;margin:Auto;margin-top:20px;">
+        <div class="start-inside">
+            <md-input-container>
+                <input mdInput placeholder="E-posta adresinizi giriniz" value="">
+            </md-input-container>
+            <br/>
+            <md-input-container>
+                <input mdInput placeholder="Şifrenizi giriniz" value="">
+            </md-input-container>
+            <br/>
+            <div class="button-container">
+                <a [routerLink]="['/sifremiunuttum']">
+                    <div class="button-forgot">
+                        Şifremi Unuttum
+                    </div>
+                </a>
+                <a [routerLink]="['']">
+                    <div class="button-login">
+                        Giriş Yap
+                    </div>
+                </a>
+                <a [routerLink]="['']">
+                    <div class="button-register">Hala üye olmadınız mı?</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

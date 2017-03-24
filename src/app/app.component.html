@@ -1,0 +1,96 @@
+<div style="height:100%">
+    <md-toolbar color="primary" template="ngIf this.router.url!=homePageUrl && this.router.url!=forgotPageUrl">
+        <div class="top-nav">
+            <img src=".\src\assets\images\logo.png">
+            <!-- <li style="padding-left: 1em;">
+                <span *ngIf="isMobile" (tap)="hideNav()">
+                <md-icon>menu</md-icon>
+            </span>
+            </li> 
+            <li><img src=".\src\assets\images\logo.png" style="height: 30px;"></li>
+-->
+        </div>
+    </md-toolbar>
+
+   <md-sidenav-container>
+        <!--
+        <md-sidenav *ngIf="isMobile" #start mode="over" opened="false" (open)="closeStartButton.focus()">
+            <div class="nav-container">
+                <div class="nav-item" (tap)="start.close()">
+                    <a [routerLink]="['bildirimler']" style="outline: none;">
+                        <md-icon>visibility</md-icon>
+                        <span class="sidenav-tems-align">Bildirimler</span>
+                    </a>
+                </div>
+                <div class="nav-item" (tap)="start.close()">
+                    <a [routerLink]="['dost']">
+                        <md-icon>pets</md-icon>
+                        <span class="sidenav-tems-align">Dostlar</span>
+                    </a>
+                </div>
+                <div class="nav-item" (tap)="start.close()">
+                    <a [routerLink]="['ayarlar']">
+                        <md-icon>settings</md-icon>
+                        <span class="sidenav-tems-align">Ayarlar</span>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <button style="display: none;" md-button #closeStartButton (click)="start.close()">Close</button>
+        </md-sidenav>
+        <md-sidenav class="is-mobile-sidenav" *ngIf="!isMobile" #end mode="side" align="start" opened="true">
+            <div class="nav-container">
+                <div class="nav-item">
+                    <a [routerLink]="['/create']">
+                        <md-icon>visibility</md-icon>
+                        <span class="sidenav-tems-align">Bildirimler</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a [routerLink]="['/lists']">
+                        <md-icon>pets</md-icon>
+                        <span class="sidenav-tems-align">Dostlar</span>
+                    </a>
+                </div>
+                <div class="nav-item">
+                    <a [routerLink]="['/help']">
+                        <md-icon>settings</md-icon>
+                        <span class="sidenav-tems-align">Ayarlar</span>
+                    </a>
+                </div>
+            </div>
+        </md-sidenav>
+-->
+        <div class="content">
+            <div class="app-main-container">
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+
+    </md-sidenav-container>
+
+    <div class="app-footer-container" color="primary"  template="ngIf this.router.url!=homePageUrl && this.router.url!=forgotPageUrl">
+        <ul>
+            <li>
+                <a [routerLink]="['bildirimler']">
+                    <md-icon>home</md-icon>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['liste']">
+                    <md-icon>pets</md-icon>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['']">
+                    <md-icon>photo_camera</md-icon>
+                </a>
+            </li>
+            <li>
+                <a [routerLink]="['profil/bilgi']">
+                    <md-icon>person</md-icon>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

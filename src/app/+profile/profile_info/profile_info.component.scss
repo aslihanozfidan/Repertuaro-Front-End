@@ -1,0 +1,60 @@
+.profile-info-container{
+    width:140px;
+    height: 30px;
+    margin:Auto;
+    color:#2b3f60;
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    margin-top:20px;
+}
+
+.profile-info-container a{
+    color:#2b3f60;
+    text-decoration: none;
+}
+
+md-icon, .txt-info{
+    float: left;
+    text-align: center;
+}
+
+.icon-message{    
+    color:#212121;
+}
+
+.icon-favorite{    
+    color:#015301;
+}
+
+.volunteer-container{
+    width:100%;
+    height: 130px;
+    margin-top: 10px;
+    background-color: #2b3f60;
+    border-bottom:2px solid #ffffff;
+    position: absolute;
+    bottom:42px;
+}
+
+.volunteer{
+    width:90%;
+    height: auto;
+    margin:auto;
+}
+
+.volunteer img{
+    width:23%;
+    height: 23%;
+    float: left;
+    margin: 2px;
+}
+
+.baslik-volunteer{
+    width:100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    color:#ffffff;
+}
