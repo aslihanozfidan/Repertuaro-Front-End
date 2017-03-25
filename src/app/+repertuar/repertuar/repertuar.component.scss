@@ -1,8 +1,9 @@
 .start-container{
-    min-height: 600px;
+    position: relative;
     height: auto;
     text-align: center;
     background-color: #bfc6d0;
+    overflow: hidden;
 }
 @media screen and (height:736px) { .start-container{ height:624px;} }
 @media screen and (height:640px) { .start-container{ height:calc(640px - 112px);} }
@@ -16,133 +17,114 @@
     margin-top: 2px;
 }
 
-.dost-slider{
+.repertuar-container{
     width:100%;
-    height: 200px;
-    padding:0px;
-    margin:0px;
-}
-
-.dost-slider img{
-    width:100%;
-    height: 150px;
-}
-
-.profile-photo{
-    margin-top:-120px;
-}
-
-.profile-photo img{
-    border-radius:100px;
-    width:100px;
-    height: 100px;
-    margin:auto;
-    border:5px solid #2b3f60;
-}
-
-.dost-info-container {
-    width:100%;
-    height: 40px;
-}
-
-.dost-info{
-    width:85%;
-    height: 40px;
-    margin:Auto;
-    border-bottom: 2px solid #2b3f60;
-    list-style: none;
-    padding-left: 0px;
-}
-
-.dost-info li{
+    height: auto;
     float: left;
-    height: 40px;
-    line-height: 40px;
-    width:33.3%;
-    text-align: center;
-    color:#2b3f60;
-    font-weight: bold;    
+    position: relative;
+    margin-bottom: 10px;
 }
 
-.dost-info a{
-    text-decoration: none;
-    color:#2b3f60;
+.repertuar-container a{
+    width:100%;
+    height: 165px;
 }
 
-.dost-info li:last-child, .dost-info li:first-child{
+.list-search{
+    background-color:  #eae8e7;
+    width: 100%;
+    height: 50px;    
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
+}
+
+.list-search form{
+    width:90%;
+    height: 30px;    
+    margin:auto;
+    padding-top: 10px;
+}
+
+.list-search input:first-child{
+    width:60%;
+    height: 30px; 
+    font-size: 14px;
+    border-radius: 5px;  
+    float: left;  
+    border: none;
+    padding-left: 5px;
+}
+
+.list-search #btn-filter, .list-search #btn-search{
+    width:15%;
+    height: 30px; 
+    font-size: 14px;
+    border-radius: 5px;  
+    float: left;
+    margin-left: 5%;  
+    border: none;
+    background-color: #cdcdcd;
+}
+
+#btn-filter{
+    float: right;
+}
+
+.list-list-container{
+    position: relative;
+    background-color:  #eae8e7;
+    width: 100%;
+    height: 50px;    
+    -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
+    margin-top:10px;
+}
+
+.repertuar-img{
+    float:left;
+    width:auto;
+    height:50px;
+    margin-left: 10px;
+}
+
+.repertuar-img img{
+    width:inherit;
+    height: inherit;
+}
+
+.list-label{
+    float: left;
+    width: 60%;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.list-label .repertuar-name{
+    color:#47747F;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.list-label .repertuar-description{
+    color:#47747F;
     font-size: 12px;
 }
 
-.baslik{
-    width:100%;
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-    color:#2b3f60;
-    margin-top: 10px;
+.list-process{
+    float:left;
+    position: absolute;
+    right:20px;
+    top:5px;
 }
 
-.baslik-volunteer{
-    width:100%;
-    height: 30px;
-    line-height: 30px;
-    text-align: center;
-    font-size: 13px;
-    color:#ffffff;
+.list-process a{
+    color:#cdcdcd;
+    font-size: 25px;
 }
 
-.dost-situation-container{
-    width:85%;
-    height: 120px;
-    margin:Auto;
-    margin-top:10px;
-    margin-bottom:0px;
-    background-color:#2b3f60;
-}
-
-.dost-situation{
-    width:50%;
-    float: left;
-    height: 60px;
-    line-height: 60px;
-    border:1px solid #ffffff;
-    text-align: center;
-    color:#ffffff;
-}
-
-.dost-situation:nth-child(3){
-    background-color: #660b0b;
-}
-
-.dost-situation:nth-child(2){
-    background-color: #015301;
-}
-
-.dost-situation:nth-child(1){
-    background-color: #2b3f60;
-}
-
-.dost-situation:nth-child(4){
-    background-color: #270153;
-}
-
-.location-volunteer-container{
-    width:100%;
-    height: 130px;
-    margin-top: 10px;
-    background-color: #2b3f60;
-    border-bottom:2px solid #ffffff;
-}
-
-.location-volunteer{
-    width:50%;
-    height: 100px;
-    float: left;
-}
-
-.location-volunteer img{
-    width:40px;
-    height: 40px;
-    float: left;
-    padding: 2px;
+.list-process a .material-icons{
+    font-size: 40px;
 }

@@ -1,4 +1,56 @@
 <div class="start-container start-alignment">
- 
-   <router-outlet></router-outlet>
+    <div class="repertuar-container">
+        <div class="list-search">
+            <form>
+                <input type="text" placeholder="Repertuar Ara..." />
+                <input type="submit" value="Ara" id="btn-search" />
+                <input type="submit" value="Filtrele" id="btn-filter" />
+            </form>
+        </div>
+
+        <div class="list-list-container">
+            <div class="repertuar-img">
+                <img src="/src/assets/images/uye1.jpg" />
+            </div>
+            <div class="list-label">
+                <div class="repertuar-name">REPERTUAR ADI</div>
+                <div class="repertuar-description">Repertuar Açıklaması</div>
+            </div>
+            <div class="list-process">
+                <a [routerLink]="['/repertuar/mysongs/bilgi']">
+                    <i class="material-icons">play_arrow</i>
+                </a>
+            </div>
+        </div>
+
+        <div class="list-list-container">
+            <div class="repertuar-img">
+                <img src="/src/assets/images/uye1.jpg" />
+            </div>
+            <div class="list-label">
+                <div class="repertuar-name">REPERTUAR ADI</div>
+                <div class="repertuar-description">Repertuar Açıklaması</div>
+            </div>
+            <div class="list-process">
+                <a [routerLink]="['/repertuar/mysongs/bilgi']">
+                    <i class="material-icons">play_arrow</i>
+                </a>
+            </div>
+        </div>
+
+        <div class="list-list-container">
+            <div class="repertuar-img">
+                <img src="/src/assets/images/uye1.jpg" />
+            </div>
+            <div class="list-label">
+                <div class="repertuar-name">REPERTUAR ADI</div>
+                <div class="repertuar-description">Repertuar Açıklaması</div>
+            </div>
+            <div class="list-process">
+                <a [routerLink]="['/repertuar/mysongs/bilgi']">
+                    <i class="material-icons">play_arrow</i>
+                </a>
+            </div>
+        </div>
+    </div>
 </div>

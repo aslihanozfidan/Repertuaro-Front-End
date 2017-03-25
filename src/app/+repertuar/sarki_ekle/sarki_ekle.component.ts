@@ -12,15 +12,14 @@ import { user } from './../../model/user';
 import { RepertuarModule } from '../repertuar.module';
 
 @Component({
-    selector: 'durum',
-    templateUrl: './durum.component.html',
-    styleUrls: ['./durum.component.scss'],
+    selector: 'sarki_ekle',
+    templateUrl: './sarki_ekle.component.html',
+    styleUrls: ['./sarki_ekle.component.scss'],
     providers: [UsersService]
 })
 
-export class DurumComponent implements OnInit, OnDestroy {
-    durumName="tobby";
-   
+export class SarkiEkleComponent implements OnInit, OnDestroy {
+      
     private commentsUrl = 'api';
     private users: user[];
     constructor(
@@ -33,7 +32,7 @@ export class DurumComponent implements OnInit, OnDestroy {
     }
 
     ngOnInit() {
-        this.route.params.subscribe(key => this.durumName = key["durumName"]);
+        
     }
 
 

@@ -72,23 +72,27 @@
     <div class="app-footer-container" color="primary"  template="ngIf this.router.url!=homePageUrl && this.router.url!=forgotPageUrl">
         <ul>
             <li>
-                <a [routerLink]="['bildirimler']">
-                    <md-icon>home</md-icon>
+                <a [routerLink]="['sahne_modu']">
+                    <md-icon>mic</md-icon>
+                    <div class="icon-text">Sahne Modu</div>
                 </a>
             </li>
             <li>
                 <a [routerLink]="['liste']">
-                    <md-icon>pets</md-icon>
+                    <md-icon>queue_music</md-icon>
+                    <div class="icon-text">Şarkı Havuzu</div>
                 </a>
             </li>
             <li>
-                <a [routerLink]="['']">
-                    <md-icon>photo_camera</md-icon>
+                <a [routerLink]="['repertuar/repertuarlar']">
+                    <md-icon>folder</md-icon>
+                    <div class="icon-text">Repertuarım</div>
                 </a>
             </li>
             <li>
                 <a [routerLink]="['profil/bilgi']">
                     <md-icon>person</md-icon>
+                    <div class="icon-text">Profilim</div>
                 </a>
             </li>
         </ul>

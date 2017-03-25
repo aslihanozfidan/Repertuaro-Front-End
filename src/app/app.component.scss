@@ -118,10 +118,6 @@ md-sidenav-container.md-sidenav-content{
     transition: all .4s ease-in;
 }
 
-.app-footer-container ul li a md-icon{
-    line-height: 56px;
-}
-
 .app-footer-container ul li a:hover{
     color:#0d71ab;
     background-color: white;
@@ -135,6 +131,10 @@ md-sidenav-container.md-sidenav-content{
 .app-footer-container ul li a:active{
     color:#0d71ab;
     background-color: white;
+}
+
+.icon-text{
+    font-size: 12px;
 }
 
 .nav-item img{

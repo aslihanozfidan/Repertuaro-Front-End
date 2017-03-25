@@ -5,8 +5,9 @@ import { MaterialModule } from '@angular/material';
 import { RepertuarRoutingModule } from './repertuar.routing';
 import { SharedModule } from './../shared/shared.module';
 import { RepertuarComponent } from './repertuar/repertuar.component';
+import { RepertuarBilgiComponent } from './repertuar_bilgi/repertuar_bilgi.component';
 import { RepertuarMainComponent } from './repertuar_main/repertuar_main.component';
-import { DurumComponent } from './durum/durum.component';
+import { SarkiEkleComponent } from './sarki_ekle/sarki_ekle.component';
 import { UsersService } from './../services/users.service';
 
 // repertuar module bootstrap
@@ -17,7 +18,7 @@ import { UsersService } from './../services/users.service';
     CommonModule
   ],
   exports: [],
-  declarations: [RepertuarComponent, DurumComponent, RepertuarMainComponent],
+  declarations: [RepertuarComponent, SarkiEkleComponent, RepertuarMainComponent,RepertuarBilgiComponent],
   providers: [UsersService],
 })
 export class RepertuarModule { }

@@ -71,7 +71,22 @@
     float: right;
 }
 
-.song-list-container{
+.repertuarbilgi-menu{ 
+    margin-top:10px;
+    height: 30px;
+}
+
+.repertuarbilgi-menu a{
+    text-decoration: none;
+    color:#47747F;
+    font-size: 12px;
+}
+
+.repertuarbilgi-menu a .meterial-icons{
+    font-size: 14px;
+}
+
+.repertuarbilgi-container{
     position: relative;
     background-color:  #eae8e7;
     width: 100%;
