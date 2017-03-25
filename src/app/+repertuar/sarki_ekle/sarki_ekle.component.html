@@ -1,24 +1,54 @@
-<div class="sarkiekle-container">
-    <md-input-container>
-        <input mdInput placeholder="sarkiekle konusunu seçiniz" value="">
-    </md-input-container>
-    <br/>
-    <md-input-container>
-        <input mdInput placeholder="sarkiekleu giriniz" value="">
-    </md-input-container>
-    <br/>
-    <md-input-container>
-        <input mdInput placeholder="Not girebilirsiniz" value="">
-    </md-input-container>
-    <br/>
-    <div class="sarkiekle-buttons-container">
-    <md-checkbox ng-model="true" aria-label="Yer Bildir" class="cbx-location">
-        Yer Bildir
-    </md-checkbox>
-    <a [routerLink]="['']" class="lnk-login">
-        <div class="button-login">
-            Gönder
+<div class="start-container start-alignment">
+    <div class="sarkiekle-container">
+        <md-input-container>
+            <input mdInput placeholder="Sanatçı adı giriniz" value="">
+        </md-input-container>
+        <br/>
+        <md-input-container>
+            <input mdInput placeholder="Şarkı adı giriniz" value="">
+        </md-input-container>
+        <br/>
+            <input mdInput/>
+            <label style="text-align: left;">Müzik türü seçiniz</label>
+            <md-select multiple>
+                <md-option>Rock</md-option>
+                <md-option>Pop</md-option>
+                <md-option>Blues</md-option>
+                <md-option>Jazz</md-option>
+                <md-option>Klasik</md-option>
+            </md-select>
+        <br/>
+      
+            <input mdInput/>
+            <label>Repertuar seçiniz</label>
+            <md-select multiple>
+                <md-option>Repertuar Adı</md-option>
+                <md-option>Repertuar Adı</md-option>
+                <md-option>Repertuar Adı</md-option>
+            </md-select>
+        
+        <br/>
+        <br/>
+        Ne ekleyeceksiniz?
+        <br/>
+        <br/>
+        <md-checkbox class="md-primary">Şarkı Sözü</md-checkbox>
+        <md-checkbox class="md-primary">Akor</md-checkbox>
+        <md-checkbox class="md-primary">Nota</md-checkbox>
+        <br/>
+         <mdInput-container class="md-block">
+            
+          <label>Şarkı Sözü(Seçime göre dinamik)</label>
+          <br/>
+          <textarea md-maxlength="550" rows="8" md-select-on-focus=""></textarea>
+        </mdInput-container>
+        <br/>
+        <div class="sarkiekle-buttons-container">
+            <a [routerLink]="['']" class="lnk-login">
+                <div class="button-login">
+                    Kaydet
+                </div>
+            </a>
         </div>
-    </a>
     </div>
 </div>

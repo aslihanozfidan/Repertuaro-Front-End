@@ -1,7 +1,6 @@
-import { Component, OnInit, OnDestroy, NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { Router, ActivatedRoute, Params } from '@angular/router';
-
 // import 'rxjs/add/operator/map';
 // import 'rxjs/add/operator/catch';
 
@@ -9,17 +8,16 @@ import { SharedComponent } from './../../shared/shared.component';
 import { UsersService } from './../../services/users.service';
 import { user } from './../../model/user';
 
-import { RepertuarModule } from '../repertuar.module';
 
 @Component({
-    selector: 'sarki_ekle',
-    templateUrl: './sarki_ekle.component.html',
-    styleUrls: ['./sarki_ekle.component.scss'],
+    selector: 'sarki_sozu',
+    templateUrl: './sarki_sozu.component.html',
+    styleUrls: ['./sarki_sozu.component.scss'],
     providers: [UsersService]
 })
 
-export class SarkiEkleComponent implements OnInit, OnDestroy {
-      
+export class SarkiSozuComponent implements OnInit, OnDestroy {
+   
     private commentsUrl = 'api';
     private users: user[];
     constructor(
@@ -32,7 +30,7 @@ export class SarkiEkleComponent implements OnInit, OnDestroy {
     }
 
     ngOnInit() {
-        
+     
     }
 
 
