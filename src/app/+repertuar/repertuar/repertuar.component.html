@@ -7,6 +7,22 @@
                 <input type="submit" value="Filtrele" id="btn-filter" />
             </form>
         </div>
+        <div class="repertuarlar-menu">
+            <ul>
+                <li>
+                    <a [routerLink]="['/repertuar/mysongs/sarki_ekle']">
+                        <i class="material-icons">create</i>
+                        <div>Ekle</div>
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/repertuar/mysongs/repertuar_duzenle']">
+                        <i class="material-icons">content_cut</i>
+                        <div>Düzenle</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
 
         <div class="list-list-container">
             <div class="repertuar-img">
