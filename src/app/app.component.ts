@@ -5,6 +5,7 @@ import { HomeComponent } from './+home/home/home.component';
 import { RepertuarComponent } from './+repertuar/repertuar/repertuar.component';
 
 import { ForgetComponent } from './+forget/forget/forget.component';
+import { RegisterComponent } from './+register/register/register.component';
 import { SongListComponent } from './+song_list/song_list/song_list.component';
 import { ProfileComponent } from './+profile/profile/profile.component';
 declare var PouchDB: any;
@@ -21,8 +22,9 @@ export class AppComponent implements OnInit,OnDestroy {
   title = 'app works!';
   localUser:any;
   db:any;
-  homePageUrl="/home"
-  forgotPageUrl="/sifremiunuttum"
+  homePageUrl="/home";
+  forgotPageUrl="/sifremiunuttum";
+  registerPageUrl="/uyeol";
   private url;
   private user;
   private sList;

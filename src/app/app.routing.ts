@@ -7,6 +7,7 @@ export const routes: Routes = [
  { path: '', redirectTo: '/index', pathMatch: 'full' },
  { path: 'home', loadChildren: './+home/home.module#HomeModule' },
  { path: 'forget', loadChildren: './+forget/forget.module#ForgetModule' },
+ { path: 'register', loadChildren: './+register/register.module#RegisterModule' },
  { path: 'uye', loadChildren: './+profile/profile.module#ProfileModule' },
  { path: 'sarkilar', loadChildren: './+song_list/song_list.module#SongListModule' }, 
  { path: 'infopage', loadChildren: './+bildirim/bildirim.module#BildirimModule' },  

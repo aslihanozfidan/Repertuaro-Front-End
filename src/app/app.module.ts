@@ -14,6 +14,7 @@ import { AppComponent } from './app.component';
 import { RepertuarModule } from './+repertuar/repertuar.module';
 import { HomeModule } from './+home/home.module';
 import { ForgetModule } from './+forget/forget.module';
+import { RegisterModule } from './+register/register.module';
 import { SongListModule } from './+song_list/song_list.module';
 import { ProfileModule } from './+profile/profile.module';
 import { BildirimModule } from './+bildirim/bildirim.module';
@@ -34,6 +35,7 @@ import { BildirimModule } from './+bildirim/bildirim.module';
     RepertuarModule,
     HomeModule,
     ForgetModule,
+    RegisterModule,
     ProfileModule,
     SongListModule,
     BildirimModule

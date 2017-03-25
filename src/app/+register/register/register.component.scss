@@ -1,0 +1,176 @@
+
+.start-container{
+    min-height:705px;
+    text-align: center;
+}
+.start-alignment{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    margin-top: 2px;
+}
+.start-content{
+    background-color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    width:80%;
+    min-height: 400px;
+    margin:auto;
+    margin-top:120px;
+}
+
+.start-inside{
+    padding-top: 50px;
+    width: 75%;
+    margin: auto;
+}
+
+.button-container{
+    width:100%;
+    margin:auto;
+}
+
+.button-container a{
+    text-align: center;
+    margin:auto;
+    color:#323232;
+    text-decoration: none;
+}
+
+.button-forgot{
+    margin: auto;
+    height: 30px;
+    width:100%;
+    text-align: right;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.button-login{
+    margin: auto;
+    background: #0d71ab;
+    border-radius: 5px;
+    color:white;
+    height: 30px;
+    width:100%;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 10px;
+}
+
+.button-register{
+    width:100%;
+    color:#323232;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+
+#form-section {
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 75%;
+  max-width: 900px;
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.form-labels {
+	display: inline-block;
+	text-align: right;
+	width: 100%;
+	padding: 12px 0px 0px 6px;
+	vertical-align: top;
+	margin: 5px 0px 0px 5px;
+}
+
+.form-inputs {
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+	width: 90%;
+    margin:auto;
+	margin: 10px;
+}
+
+.input-box {
+	border-radius: 5px;
+	border: 1px solid #c0c0c0;
+	width: 100%;
+	height: 30px;
+	font-size: 12px;
+	padding: 0 0 0 5px;
+}
+
+.dropdown {
+	width: 100%;
+	height: 35px;
+	border-radius: 5px;
+	border: 1px solid #c0c0c0;
+	font-size: 12px;
+	padding: 5px;
+}
+
+.dropdown{
+	color:#ababab;
+}
+
+#improve-list {
+	margin: 15px 0;
+}
+
+ul {
+	list-style: none;
+}
+
+li {
+	position: relative;
+	margin: 0 0 20px 0;
+	left: px;
+}
+
+#improved-title {
+    width: 100%;
+    padding-left: 30px;
+    text-align: left;
+}
+
+#submit {
+  background-color: #0d71ab;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+}
+
+.checkbox {
+  position: relative;
+  left: -45px;
+  margin-left: 10px;
+}
+
+.add-radio{
+    list-style: none;
+    padding:0px;
+    margin:0px;
+}
+
+.add-radio li{
+    float:left;
+    width:33.3%;
+    text-align: center;
+}
+
+.add-radio li input{
+    width:20px;
+    height: 20px;
+}

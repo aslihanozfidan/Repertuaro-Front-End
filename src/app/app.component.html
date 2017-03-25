@@ -1,5 +1,5 @@
 <div style="height:100%">
-    <md-toolbar color="primary" template="ngIf this.router.url!=homePageUrl && this.router.url!=forgotPageUrl">
+    <md-toolbar color="primary" template="ngIf this.router.url!=homePageUrl && this.router.url!=forgotPageUrl && this.router.url!=registerPageUrl">
         <div class="top-nav">
             <img src=".\src\assets\images\logo.png">
             <!-- <li style="padding-left: 1em;">
@@ -69,7 +69,7 @@
 
     </md-sidenav-container>
 
-    <div class="app-footer-container" color="primary"  template="ngIf this.router.url!=homePageUrl && this.router.url!=forgotPageUrl">
+    <div class="app-footer-container" color="primary"  template="ngIf this.router.url!=homePageUrl && this.router.url!=forgotPageUrl && this.router.url!=registerPageUrl">
         <ul>
             <li>
                 <a [routerLink]="['sahne_modu']">
