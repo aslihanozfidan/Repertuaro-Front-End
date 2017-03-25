@@ -21,32 +21,3 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </body>
 </html>
-
- <script>  
-$(document).ready(function() {
-  
-  $(".selLabel").click(function () {
-    $('.dropdown').toggleClass('active');
-  });
-  
-  $(".dropdown-list li").click(function() {
-    $('.selLabel').text($(this).text());
-    $('.dropdown').removeClass('active');
-    $('.selected-item p span').text($('.selLabel').text());
-  });
-
-  
-  
-});
-$(document).ready(function() {
-$(".selLabel2").click(function () {
-    $('.dropdown2').toggleClass('active');
-  });
-  
-  $(".dropdown-list2 li").click(function() {
-    $('.selLabel2').text($(this).text());
-    $('.dropdown2').removeClass('active');
-    $('.selected-item p span').text($('.selLabel2').text());
-  });
-   });
-</script>

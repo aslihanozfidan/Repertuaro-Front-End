@@ -1,34 +1,56 @@
 <div class="start-container start-alignment">
     <div class="sarkiekle-container">
-        <form id="form" class="topBefore">
-
-            <input id="name" type="text" placeholder="SANATÇI ADI">
-            <input id="email" type="text" placeholder="ŞARKI ADI">
-
-
-            <div class="dropdown">
-                <span class="selLabel">MÜZİK TÜRÜ SEÇİNİZ</span>
-                <input type="hidden" name="cd-dropdown">
-                <ul class="dropdown-list">
-                    <li data-value="1">
-                        <span>ROCK</span>
-                    </li>
-                    <li data-value="2">
-                        <span>BLUES</span>
-                    </li>
-                    <li data-value="3">
-                        <span>POP</span>
-                    </li>
-                    <li data-value="4">
-                        <span>KLASİK</span>
-                    </li>
-                </ul>
+        <div class="sarkiekle-title">ŞARKI EKLE</div>
+        <form action="#">
+            <div class="form-input-groups">
+                <div class="form-inputs">
+                    <input class="input-box" type="text" id="name" name="name" placeholder="Sanatçı Adını Giriniz" required>
+                </div>
             </div>
-
-            
-            <textarea id="message" type="text" placeholder="ŞARKI SÖZÜ(DEĞİŞKEN)"></textarea>
-            <input id="submit" type="submit" value="GO!">
-
+            <div class="form-input-groups">
+                <div class="form-inputs">
+                    <input class="input-box" type="text" id="email" name="email" placeholder="Şarkı Adını Giriniz" required>
+                </div>
+            </div>
+            <div class="form-input-groups">
+                <div class="form-inputs">
+                    <select id="currentPos" name="currentPos" class="dropdown">
+						<option disabled value>Müzik Türü Seçiniz</option>
+						<option value="rock">Rock</option>
+						<option value="blues">Blues</option>
+						<option value="pop">Pop</option>
+						<option value="klasik">Klasik</option>
+						<option value="jazz">Jazz</option>
+					</select>
+                </div>
+                <div class="form-inputs">
+                    <select id="selectedkind" name="selectedkind" class="dropdown">
+						<option disabled value>Repertuar Seçiniz</option>
+						<option value="rep1">Repertuar Adı</option>
+						<option value="rep2">Repertuar Adı</option>
+						<option value="rep3">Repertuar Adı</option>
+					</select>
+                </div>
+            </div>
+            <div id="improve-list" class="form-input-groups">
+                <div class="form-labels" id="improved-title">
+                    <label for="preferences">Ne ekleyeceksiniz? </label>
+                </div>
+                <div class="form-inputs">
+                    <ul class="add-radio">
+                        <li><input type="radio" class="radio" name="radio" value="sarki_sozu">Şarkı Sözü</li>
+                        <li><input type="radio" class="radio" name="radio" value="akor">Akor</li>
+                        <li><input type="radio" class="radio" name="radio" value="nota">Nota</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="form-input-groups">
+                <div class="form-inputs">
+                    <textarea id="comments" class="input-box" name="comment" style="height:200px;resize:vertical; padding: 10px;width:100%;">
+Şarkı sözü("değişken")...</textarea>
+                </div>
+            </div>
+            <button id="submit" type="submit">KAYDET</button>
         </form>
     </div>
 </div>
