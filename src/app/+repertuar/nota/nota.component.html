@@ -1,166 +1,27 @@
 <div class="start-container start-alignment">
-    <div class="repertuar-container">
-        <div class="song-search">
-            <form>
-                <input type="text" placeholder="Sanatçı/Şarkı Ara..." />
-                <input type="submit" value="Ara" id="btn-search" />
-                <input type="submit" value="Filtrele" id="btn-filter" />
-            </form>
-        </div>
-
-        <div class="repertuarbilgi-menu">
+    <div class="repertuar-container">  
+       
+        <div class="nota-menu">
             <ul>
                 <li>
-                    <a [routerLink]="['/repertuar/mysongs/sarki_ekle']">
-                        <i class="material-icons">create</i>
-                        <div>Ekle</div>
+                    <a [routerLink]="['/repertuar/mysongs/bilgi']">
+                        <i class="material-icons">highlight_off</i>
                     </a>
                 </li>
 
                 <li>
                     <a [routerLink]="['/repertuar/mysongs/repertuar_duzenle']">
-                        <i class="material-icons">content_cut</i>
-                        <div>Düzenle</div>
+                        <i class="material-icons">done</i>
                     </a>
                 </li>
             </ul>
 
         </div>
 
-        <div class="repertuarbilgi-container">
-            <div class="song-number">
-                <div>1</div>
-            </div>
-            <div class="song-label">
-                <div class="artist-name">SANATÇI</div>
-                <div class="song-name">Şarkı Adı</div>
-            </div>
-            <div class="song-process">
-                <div class="song-lyric"><img src="/src/assets/images/ok-lyric.png" /></div>
-                <div class="song-acor"><img src="/src/assets/images/ok-acor.png" /></div>
-                <div class="song-note"><img src="/src/assets/images/ok-note.png" /></div>
-            </div>
+        <div class="nota-container">
+           
         </div>
 
-        <div class="repertuarbilgi-container">
-            <div class="song-number">
-                <div>2</div>
-            </div>
-            <div class="song-label">
-                <div class="artist-name">SANATÇI</div>
-                <div class="song-name">Şarkı Adı</div>
-            </div>
-            <div class="song-process">
-                <div class="song-lyric"><img src="/src/assets/images/ok-lyric.png" /></div>
-                <div class="song-acor"><img src="/src/assets/images/ok-acor.png" /></div>
-                <div class="song-note"><img src="/src/assets/images/ok-note.png" /></div>
-            </div>
-        </div>
-
-        <div class="repertuarbilgi-container">
-            <div class="song-number">
-                <div>3</div>
-            </div>
-            <div class="song-label">
-                <div class="artist-name">SANATÇI</div>
-                <div class="song-name">Şarkı Adı</div>
-            </div>
-            <div class="song-process">
-                <div class="song-lyric"><img src="/src/assets/images/ok-lyric.png" /></div>
-                <div class="song-acor"><img src="/src/assets/images/ok-acor.png" /></div>
-                <div class="song-note"><img src="/src/assets/images/ok-note.png" /></div>
-            </div>
-        </div>
-
-        <div class="repertuarbilgi-container">
-            <div class="song-number">
-                <div>4</div>
-            </div>
-            <div class="song-label">
-                <div class="artist-name">SANATÇI</div>
-                <div class="song-name">Şarkı Adı</div>
-            </div>
-            <div class="song-process">
-                <div class="song-lyric"><img src="/src/assets/images/ok-lyric.png" /></div>
-                <div class="song-acor"><img src="/src/assets/images/ok-acor.png" /></div>
-                <div class="song-note"><img src="/src/assets/images/ok-note.png" /></div>
-            </div>
-        </div>
-
-        <div class="repertuarbilgi-container">
-            <div class="song-number">
-                <div>5</div>
-            </div>
-            <div class="song-label">
-                <div class="artist-name">SANATÇI</div>
-                <div class="song-name">Şarkı Adı</div>
-            </div>
-            <div class="song-process">
-                <div class="song-lyric"><img src="/src/assets/images/ok-lyric.png" /></div>
-                <div class="song-acor"><img src="/src/assets/images/ok-acor.png" /></div>
-                <div class="song-note"><img src="/src/assets/images/ok-note.png" /></div>
-            </div>
-        </div>
-
-        <div class="repertuarbilgi-container">
-            <div class="song-number">
-                <div>6</div>
-            </div>
-            <div class="song-label">
-                <div class="artist-name">SANATÇI</div>
-                <div class="song-name">Şarkı Adı</div>
-            </div>
-            <div class="song-process">
-                <div class="song-lyric"><img src="/src/assets/images/ok-lyric.png" /></div>
-                <div class="song-acor"><img src="/src/assets/images/ok-acor.png" /></div>
-                <div class="song-note"><img src="/src/assets/images/ok-note.png" /></div>
-            </div>
-        </div>
-
-        <div class="repertuarbilgi-container">
-            <div class="song-number">
-                <div>7</div>
-            </div>
-            <div class="song-label">
-                <div class="artist-name">SANATÇI</div>
-                <div class="song-name">Şarkı Adı</div>
-            </div>
-            <div class="song-process">
-                <div class="song-lyric"><img src="/src/assets/images/ok-lyric.png" /></div>
-                <div class="song-acor"><img src="/src/assets/images/ok-acor.png" /></div>
-                <div class="song-note"><img src="/src/assets/images/ok-note.png" /></div>
-            </div>
-        </div>
-
-        <div class="repertuarbilgi-container">
-            <div class="song-number">
-                <div>8</div>
-            </div>
-            <div class="song-label">
-                <div class="artist-name">SANATÇI</div>
-                <div class="song-name">Şarkı Adı</div>
-            </div>
-            <div class="song-process">
-                <div class="song-lyric"><img src="/src/assets/images/ok-lyric.png" /></div>
-                <div class="song-acor"><img src="/src/assets/images/ok-acor.png" /></div>
-                <div class="song-note"><img src="/src/assets/images/ok-note.png" /></div>
-            </div>
-        </div>
-
-        <div class="repertuarbilgi-container">
-            <div class="song-number">
-                <div>9</div>
-            </div>
-            <div class="song-label">
-                <div class="artist-name">SANATÇI</div>
-                <div class="song-name">Şarkı Adı</div>
-            </div>
-            <div class="song-process">
-                <div class="song-lyric"><img src="/src/assets/images/ok-lyric.png" /></div>
-                <div class="song-acor"><img src="/src/assets/images/ok-acor.png" /></div>
-                <div class="song-note"><img src="/src/assets/images/ok-note.png" /></div>
-            </div>
-        </div>
 
     </div>
 

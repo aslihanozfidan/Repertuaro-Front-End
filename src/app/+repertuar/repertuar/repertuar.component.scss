@@ -1,6 +1,7 @@
 .start-container{
     position: relative;
-    height: auto;
+    height: auto;    
+    min-height: 100vh;
     text-align: center;
     background-color: #bfc6d0;
     overflow: hidden;

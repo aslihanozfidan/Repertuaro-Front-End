@@ -1,12 +1,19 @@
 .profile-info-container{
     width:140px;
     height: 30px;
-    margin:Auto;
     color:#2b3f60;
     display: block;
     text-align: center;
     font-size: 15px;
-    margin-top:20px;
+    padding:20px;
+}
+
+.profile-info-title{    
+    text-align: left;
+    color:#2b3f60;
+    font-weight: bold;
+    font-style: arial;
+    
 }
 
 .profile-info-container a{

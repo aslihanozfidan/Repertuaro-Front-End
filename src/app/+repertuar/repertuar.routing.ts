@@ -16,12 +16,12 @@ export const routes: Routes = [
       { path: 'repertuarlar', component: RepertuarComponent },
       { path: ':repertuarName/sarki_ekle', component: SarkiEkleComponent },
       { path: ':repertuarName/repertuar_duzenle', component: RepertuarDuzenleComponent },
-      {path: ':repertuarName/bilgi', component: RepertuarBilgiComponent, children: [
-          { path: 'sarki_sozu', component: SarkiSozuComponent },
-          { path: 'akor', component: AkorComponent },
-          { path: 'nota', component: NotaComponent }
-        ]
-      }
+      { path: ':repertuarName/bilgi', component: RepertuarBilgiComponent },
+      { path: ':repertuarName/bilgi/sarki_sozu', component: SarkiSozuComponent },
+      { path: ':repertuarName/bilgi/akor', component: AkorComponent },
+      { path: ':repertuarName/bilgi/nota', component: NotaComponent }
+
+
     ]
   },
 ];
