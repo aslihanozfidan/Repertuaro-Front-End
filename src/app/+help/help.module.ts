@@ -1,18 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {SharedModule} from '../shared/shared.module';
 
 import { HelpRoutingModule } from './help.routing';
-import { SharedModule } from './../shared/shared.module';
 import { HelpComponent } from './help.component';
-import { UsersService } from './../services/users.service';
 
 // help module bootstrap
 @NgModule({
   imports: [
-    HelpRoutingModule,SharedModule,CommonModule
+    HelpRoutingModule,CommonModule,SharedModule
   ],
   exports: [],
   declarations: [HelpComponent],
-  providers: [UsersService],
+  providers: [],
 })
 export class HelpModule { }

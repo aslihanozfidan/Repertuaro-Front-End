@@ -2,25 +2,24 @@
   <div class="repertuar-container">
     <div class="song-search">
       <form>
-        <input type="text" placeholder="Sanatçı/Şarkı Ara..."/>
-        <input type="submit" value="Ara" id="btn-search"/>   
-        <input type="submit" value="Filtrele" id="btn-filter"/>    
+        <input type="text" placeholder="Sanatçı/Şarkı Ara..." />
+        <input type="submit" value="Ara" id="btn-search" />
+        <input type="submit" value="Filtrele" id="btn-filter" />
       </form>
-      
     </div>
 
-    <div class="song-list-container">
+    <div class="song-list-container" *ngFor='let songlist of this.SongList'>
       <div class="song-label">
-        <div class="artist-name">SANATÇI</div>
-        <div class="song-name">Şarkı Adı</div>
+        <div class="artist-name">{{songlist.artist_name}}</div>
+        <div class="song-name">{{songlist.song_name}}</div>
       </div>
       <div class="song-process">
-        <div class="song-lyric"><img src="/src/assets/images/rm-lyric.png"/></div>
-        <div class="song-acor"><img src="/src/assets/images/add-acor.png"/></div>
-        <div class="song-note"><img src="/src/assets/images/add-note.png"/></div>
+        <div class="song-lyric"><img src="/src/assets/images/rm-lyric.png" /></div>
+        <div class="song-acor"><img src="/src/assets/images/add-acor.png" /></div>
+        <div class="song-note"><img src="/src/assets/images/add-note.png" /></div>
       </div>
     </div>
-
+    <!--
     <div class="song-list-container">
       <div class="song-label">
         <div class="artist-name">SANATÇI</div>
@@ -116,7 +115,7 @@
         <div class="song-note"><img src="/src/assets/images/add-note.png"/></div>
       </div>
     </div>
-  
+  -->
   </div>
 
 </div>

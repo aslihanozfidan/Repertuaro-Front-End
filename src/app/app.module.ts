@@ -5,11 +5,10 @@ import { HttpModule } from '@angular/http';
 import { AngularFireModule } from 'angularfire2';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 import { MaterialModule } from '@angular/material';
-
+import {SharedModule} from './shared/shared.module';
 import { AppRoutingModule } from './app.routing';
 import { IndexModule } from './index/index.module';
 import { firebaseConfig } from './config/firebase-config';
-import { UsersService } from './services/users.service';
 import { AppComponent } from './app.component';
 import { RepertuarModule } from './+repertuar/repertuar.module';
 import { HomeModule } from './+home/home.module';
@@ -38,9 +37,10 @@ import { BildirimModule } from './+bildirim/bildirim.module';
     RegisterModule,
     ProfileModule,
     SongListModule,
-    BildirimModule
+    BildirimModule,
+    SharedModule
   ],
-  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }, UsersService],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

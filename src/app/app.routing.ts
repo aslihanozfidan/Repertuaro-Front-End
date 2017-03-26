@@ -9,17 +9,9 @@ export const routes: Routes = [
  { path: 'forget', loadChildren: './+forget/forget.module#ForgetModule' },
  { path: 'register', loadChildren: './+register/register.module#RegisterModule' },
  { path: 'uye', loadChildren: './+profile/profile.module#ProfileModule' },
- { path: 'sarkilar', loadChildren: './+song_list/song_list.module#SongListModule' }, 
- { path: 'infopage', loadChildren: './+bildirim/bildirim.module#BildirimModule' },  
+ { path: 'sarkilar', loadChildren: './+song_list/song_list.module#SongListModule' },
   { path: 'repertuar', loadChildren: './+repertuar/repertuar.module#RepertuarModule' },
-  { path: 'help', loadChildren: './+help/help.module#HelpModule' },
-  { path: 'list/:id', loadChildren: './+list/list.module#ListModule' },
-  { path: 'manage', loadChildren: './+manage/manage.module#ManageModule' },
-  { path: 'lists', loadChildren: './+lists/lists.module#ListsModule' },
-  { path: 'editlist', loadChildren: './+edit/edit.module#EditModule' },
-  { path: 'clearlist', loadChildren: './+clear/clear.module#ClearModule' },
-  { path: 'deletelist', loadChildren: './+delete/delete.module#DeleteModule' },
-  { path: 'finishlist', loadChildren: './+finish/finish.module#FinishModule' }
+  { path: 'help', loadChildren: './+help/help.module#HelpModule' }
 ];
 
 @NgModule({

@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from '@angular/material';
+import {SharedModule} from '../shared/shared.module';
 
 import { BildirimRoutingModule } from './bildirim.routing';
-import { SharedModule } from './../shared/shared.module';
 import { BildirimComponent } from './bildirim/bildirim.component';
-import { UsersService } from './../services/users.service';
 
 // dost module bootstrap
 @NgModule({
   imports: [
-    BildirimRoutingModule,SharedModule,
+    BildirimRoutingModule,
     MaterialModule.forRoot(),
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
   exports: [],
   declarations: [BildirimComponent],
-  providers: [UsersService],
+  providers: [],
 })
 export class BildirimModule { }

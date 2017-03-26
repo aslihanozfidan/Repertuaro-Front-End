@@ -1,82 +1,53 @@
-<div class="start-container start-alignment">    
-        <div class="list-search">
-            <form>
-                <input type="text" placeholder="Repertuar Ara..." />
-                <input type="submit" value="Ara" id="btn-search" />
-                <input type="submit" value="Filtrele" id="btn-filter" />
-            </form>
-        </div>
-        <div class="repertuarlar-menu">
-            <ul>
-                <li>
-                    <a [routerLink]="['/repertuar/repertuarlar/repetuar_ekle']" id="repertuar-ekle">
-                        <i class="material-icons">create</i>
-                        <div>Ekle</div>
-                    </a>
-                </li>
-                <li>
-                    <a [routerLink]="['/repertuar/repertuarlar/repertuar_main_duzenle']">
-                        <i class="material-icons">content_cut</i>
-                        <div>Düzenle</div>
-                    </a>
-                </li>
-            </ul>
-        </div>
-
-        <div class="repertuarekle-container" id="repertuarekle-container" style="display:none;">
-            <div class="repertuarekle-title">REPERTUAR EKLE</div>
-            <form action="#">
-                <div class="form-input-groups">
-                    <div class="form-inputs">
-                        <input class="input-box" type="text" id="name" name="name" placeholder="Repertuar Adını Giriniz" required>
-                    </div>
-                </div>
-                <div class="form-input-groups">
-                    <div class="form-inputs">
-                        <input class="input-box" type="text" id="email" name="email" placeholder="Repertuar Açıklaması Giriniz">
-                    </div>
-                </div>
-                <button id="submit" type="submit">KAYDET</button>
-            </form>
-        </div>
-<div class="repertuar-container">
-        <div class="list-list-container">
-            <div class="repertuar-img">
-                <img src="/src/assets/images/uye1.jpg" />
-            </div>
-            <div class="list-label">
-                <div class="repertuar-name">REPERTUAR ADI</div>
-                <div class="repertuar-description">Repertuar Açıklaması</div>
-            </div>
-            <div class="list-process">
-                <a [routerLink]="['/repertuar/mysongs/bilgi']">
-                    <i class="material-icons">play_arrow</i>
+<div class="start-container start-alignment">
+    <div class="list-search">
+        <form>
+            <input type="text" placeholder="Repertuar Ara..." />
+            <input type="submit" value="Ara" id="btn-search" />
+            <input type="submit" value="Filtrele" id="btn-filter" />
+        </form>
+    </div>
+    <div class="repertuarlar-menu">
+        <ul>
+            <li>
+                <a [routerLink]="['/repertuar/repertuarlar/repetuar_ekle']" id="repertuar-ekle">
+                    <i class="material-icons">create</i>
+                    <div>Ekle</div>
                 </a>
-            </div>
-        </div>
-
-        <div class="list-list-container">
-            <div class="repertuar-img">
-                <img src="/src/assets/images/uye1.jpg" />
-            </div>
-            <div class="list-label">
-                <div class="repertuar-name">REPERTUAR ADI</div>
-                <div class="repertuar-description">Repertuar Açıklaması</div>
-            </div>
-            <div class="list-process">
-                <a [routerLink]="['/repertuar/mysongs/bilgi']">
-                    <i class="material-icons">play_arrow</i>
+            </li>
+            <li>
+                <a [routerLink]="['/repertuar/repertuarlar/repertuar_main_duzenle']">
+                    <i class="material-icons">content_cut</i>
+                    <div>Düzenle</div>
                 </a>
-            </div>
-        </div>
+            </li>
+        </ul>
+    </div>
 
-        <div class="list-list-container">
+    <div class="repertuarekle-container" id="repertuarekle-container" style="display:none;">
+        <div class="repertuarekle-title">REPERTUAR EKLE</div>
+        <form action="#">
+            <div class="form-input-groups">
+                <div class="form-inputs">
+                    <input class="input-box" type="text" id="name" name="name" placeholder="Repertuar Adını Giriniz" required>
+                </div>
+            </div>
+            <div class="form-input-groups">
+                <div class="form-inputs">
+                    <input class="input-box" type="text" id="email" name="email" placeholder="Repertuar Açıklaması Giriniz">
+                </div>
+            </div>
+            <button id="submit" type="submit">KAYDET</button>
+        </form>
+    </div>
+    
+    <div class="repertuar-container">
+        <div class="list-list-container" *ngFor='let repertuarlist of this.repertuarlist'>
             <div class="repertuar-img">
                 <img src="/src/assets/images/uye1.jpg" />
             </div>
             <div class="list-label">
-                <div class="repertuar-name">REPERTUAR ADI</div>
-                <div class="repertuar-description">Repertuar Açıklaması</div>
+                <div class="repertuar-name">{{repertuarlist.repertuar_name}}</div>
+                <div class="repertuar-description">{{repertuarlist.repertuar_description}}</div>
             </div>
             <div class="list-process">
                 <a [routerLink]="['/repertuar/mysongs/bilgi']">
@@ -86,4 +57,3 @@
         </div>
     </div>
 </div>
-

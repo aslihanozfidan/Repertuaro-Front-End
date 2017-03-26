@@ -1,21 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from '@angular/material';
+import {SharedModule} from '../shared/shared.module';
 
 import { RegisterRoutingModule } from './register.routing';
-import { SharedModule } from './../shared/shared.module';
 import { RegisterComponent } from './register/register.component';
-import { UsersService } from './../services/users.service';
 
 // Register module bootstrap
 @NgModule({
   imports: [
-    RegisterRoutingModule,SharedModule,
+    RegisterRoutingModule,
     MaterialModule.forRoot(),
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
   exports: [],
   declarations: [RegisterComponent],
-  providers: [UsersService],
+  providers: [],
 })
 export class RegisterModule { }
