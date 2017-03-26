@@ -1,10 +1,11 @@
 .start-container{
     position: relative;
-    height: auto;    
-    min-height: 100vh;
+    height: auto;
+    width:100%;
     text-align: center;
-    background-color: #bfc6d0;
-    overflow: hidden;
+    background-color:rgba(191, 198, 208, 0.7);
+    overflow: hidden;    
+    padding-bottom: 10px;
 }
 @media screen and (height:736px) { .start-container{ height:624px;} }
 @media screen and (height:640px) { .start-container{ height:calc(640px - 112px);} }
@@ -18,176 +19,13 @@
     margin-top: 2px;
 }
 
-.repertuar-container, .repertuarekle-container-duzenle{
-    width:100%;
-    height: auto;
-    float: left;
-    position: relative;
-    margin-bottom: 10px;
-}
-
-.repertuarekle-container-duzenle{display: none;}
-
-.repertuar-container a{
-    width:100%;
-    height: 165px;
-}
-
-.list-search{
-    background-color:  #eae8e7;
-    width: 100%;
-    height: 50px;    
-    -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
-    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
-}
-
-.list-search form{
-    width:90%;
-    height: 30px;    
-    margin:auto;
-    padding-top: 10px;
-}
-
-.list-search input:first-child{
-    width:60%;
-    height: 30px; 
-    font-size: 14px;
-    border-radius: 5px;  
-    float: left;  
-    border: none;
-    padding-left: 5px;
-}
-
-.list-search #btn-filter, .list-search #btn-search{
-    width:15%;
-    height: 30px; 
-    font-size: 14px;
-    border-radius: 5px;  
-    float: left;
-    margin-left: 5%;  
-    border: none;
-    background-color: #cdcdcd;
-}
-
-#btn-filter{
-    float: right;
-}
-
-.active{display: block;}
-.pasif{display: none;}
-
-.repertuarlar-menu{ 
-    height: 35px;
-    margin-top:1px;
-}
-
-.repertuarlar-menu ul{ 
-    list-style: none;
-    width:160px;
-    height: 35px;
-    padding-left: 0px;
-    margin:0px;
-    float:right;
-    background-color: #eae8e7;
-}
-
-.repertuarlar-menu ul li{ 
-    width:50%;
-    float:left;
-}
-
-.repertuarlar-menu ul li a {
-    text-decoration: none;
-    color:#0d71ab;
-    font-size: 10px;
-    height: 35px;
-}
-
-.repertuarlar-menu ul li a:hover {
-    color:#ffffff;
-}
-
-.repertuarlar-menu ul li a:focus {
-    color:#ffffff;
-}
-
-.repertuarlar-menu ul li a:active {
-    color:#ffffff;
-
-}
-
-.repertuarlar-menu .material-icons{
-    font-size: 12px;
-    margin-top: 5px;
-}
-
-.list-list-container{
-    position: relative;
-    background-color:  #eae8e7;
-    width: 100%;
-    height: 50px;    
-    -webkit-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
-    box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.2);
-    margin-top:0px;
-}
-
-.repertuar-img{
-    float:left;
-    width:auto;
-    height:50px;
-    margin-left: 10px;
-}
-
-.repertuar-img img{
-    width:inherit;
-    height: inherit;
-}
-
-.list-label{
-    float: left;
-    width: 60%;
-    text-align: left;
-    padding-left: 20px;
-    padding-top: 10px;
-}
-
-.list-label .repertuar-name{
-    color:#47747F;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.list-label .repertuar-description{
-    color:#47747F;
-    font-size: 12px;
-}
-
-.list-process{
-    float:left;
-    position: absolute;
-    right:20px;
-    top:5px;
-}
-
-.list-process a{
-    color:#cdcdcd;
-    font-size: 25px;
-}
-
-.list-process a .material-icons{
-    font-size: 40px;
-}
-
-
-
 .repertuarekle-container{
-    width:100%;
+    width:95%;
     height: auto;
     background-color:rgba(255,255,255,1);
     color:#2b3f60;
-    margin-bottom: 10px;
+    margin:auto;
+    margin-top: 0px;
     -webkit-box-shadow: 0px 0px 3px 1px rgba(48,48,48,0.37);
     -moz-box-shadow: 0px 0px 3px 1px rgba(48,48,48,0.37);
     box-shadow: 0px 0px 3px 1px rgba(48,48,48,0.37);
